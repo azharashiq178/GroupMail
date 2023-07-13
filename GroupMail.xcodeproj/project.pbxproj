@@ -14,6 +14,13 @@
 		7E7EA31B2A5FD142000FB8C4 /* GroupMailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EA31A2A5FD142000FB8C4 /* GroupMailTests.swift */; };
 		7E7EA3252A5FD142000FB8C4 /* GroupMailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EA3242A5FD142000FB8C4 /* GroupMailUITests.swift */; };
 		7E7EA3272A5FD142000FB8C4 /* GroupMailUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EA3262A5FD142000FB8C4 /* GroupMailUITestsLaunchTests.swift */; };
+		7E7EA3372A5FD1C6000FB8C4 /* GroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EA3362A5FD1C6000FB8C4 /* GroupData.swift */; };
+		7E7EA3392A5FD1F0000FB8C4 /* MailGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EA3382A5FD1F0000FB8C4 /* MailGroupViewModel.swift */; };
+		7E7EA33B2A5FD227000FB8C4 /* AllGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EA33A2A5FD227000FB8C4 /* AllGroupsView.swift */; };
+		7E7EA33D2A5FD269000FB8C4 /* NewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EA33C2A5FD269000FB8C4 /* NewGroupView.swift */; };
+		7E7EA33F2A5FD29F000FB8C4 /* GroupDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EA33E2A5FD29F000FB8C4 /* GroupDetailsView.swift */; };
+		7E7EA3412A5FD309000FB8C4 /* ComposeMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7EA3402A5FD309000FB8C4 /* ComposeMailView.swift */; };
+		7E7EA3442A5FD46C000FB8C4 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 7E7EA3432A5FD46C000FB8C4 /* SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,12 @@
 		7E7EA3202A5FD142000FB8C4 /* GroupMailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupMailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E7EA3242A5FD142000FB8C4 /* GroupMailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMailUITests.swift; sourceTree = "<group>"; };
 		7E7EA3262A5FD142000FB8C4 /* GroupMailUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMailUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E7EA3362A5FD1C6000FB8C4 /* GroupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupData.swift; sourceTree = "<group>"; };
+		7E7EA3382A5FD1F0000FB8C4 /* MailGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailGroupViewModel.swift; sourceTree = "<group>"; };
+		7E7EA33A2A5FD227000FB8C4 /* AllGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsView.swift; sourceTree = "<group>"; };
+		7E7EA33C2A5FD269000FB8C4 /* NewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupView.swift; sourceTree = "<group>"; };
+		7E7EA33E2A5FD29F000FB8C4 /* GroupDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsView.swift; sourceTree = "<group>"; };
+		7E7EA3402A5FD309000FB8C4 /* ComposeMailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeMailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7EA3442A5FD46C000FB8C4 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +108,10 @@
 		7E7EA3082A5FD141000FB8C4 /* GroupMail */ = {
 			isa = PBXGroup;
 			children = (
+				7E7EA3352A5FD19D000FB8C4 /* View */,
+				7E7EA3342A5FD192000FB8C4 /* ViewModels */,
+				7E7EA3332A5FD18D000FB8C4 /* Models */,
 				7E7EA3092A5FD141000FB8C4 /* GroupMailApp.swift */,
-				7E7EA30B2A5FD141000FB8C4 /* ContentView.swift */,
 				7E7EA30D2A5FD142000FB8C4 /* Assets.xcassets */,
 				7E7EA30F2A5FD142000FB8C4 /* Preview Content */,
 			);
@@ -127,6 +143,34 @@
 			path = GroupMailUITests;
 			sourceTree = "<group>";
 		};
+		7E7EA3332A5FD18D000FB8C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E7EA3362A5FD1C6000FB8C4 /* GroupData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7E7EA3342A5FD192000FB8C4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7E7EA3382A5FD1F0000FB8C4 /* MailGroupViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7E7EA3352A5FD19D000FB8C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E7EA30B2A5FD141000FB8C4 /* ContentView.swift */,
+				7E7EA33A2A5FD227000FB8C4 /* AllGroupsView.swift */,
+				7E7EA33C2A5FD269000FB8C4 /* NewGroupView.swift */,
+				7E7EA33E2A5FD29F000FB8C4 /* GroupDetailsView.swift */,
+				7E7EA3402A5FD309000FB8C4 /* ComposeMailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +187,9 @@
 			dependencies = (
 			);
 			name = GroupMail;
+			packageProductDependencies = (
+				7E7EA3432A5FD46C000FB8C4 /* SQLite */,
+			);
 			productName = GroupMail;
 			productReference = 7E7EA3062A5FD141000FB8C4 /* GroupMail.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 7E7EA2FD2A5FD141000FB8C4;
+			packageReferences = (
+				7E7EA3422A5FD46C000FB8C4 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = 7E7EA3072A5FD141000FB8C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7EA33D2A5FD269000FB8C4 /* NewGroupView.swift in Sources */,
 				7E7EA30C2A5FD141000FB8C4 /* ContentView.swift in Sources */,
+				7E7EA3372A5FD1C6000FB8C4 /* GroupData.swift in Sources */,
+				7E7EA33B2A5FD227000FB8C4 /* AllGroupsView.swift in Sources */,
+				7E7EA33F2A5FD29F000FB8C4 /* GroupDetailsView.swift in Sources */,
 				7E7EA30A2A5FD141000FB8C4 /* GroupMailApp.swift in Sources */,
+				7E7EA3392A5FD1F0000FB8C4 /* MailGroupViewModel.swift in Sources */,
+				7E7EA3412A5FD309000FB8C4 /* ComposeMailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +633,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E7EA3422A5FD46C000FB8C4 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E7EA3432A5FD46C000FB8C4 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E7EA3422A5FD46C000FB8C4 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E7EA2FE2A5FD141000FB8C4 /* Project object */;
 }
